@@ -1,0 +1,271 @@
+{
+  "users": [
+    {
+      "id": "a7ac",
+      "name": "Adit",
+      "email": "aditiaeka@komejepang.com",
+      "password": "adit",
+      "password_confirmation": "adit",
+      "roles": [
+        "super_admin"
+      ]
+    },
+    {
+      "id": "a7bb",
+      "name": "akademik",
+      "email": "akademik@kampus.ac.id",
+      "password": "akademik123",
+      "password_confirmation": "akademik123",
+      "roles": [
+        "akademik_manager"
+      ]
+    },
+    {
+      "id": "bd48",
+      "name": "root",
+      "email": "root@test",
+      "password": "root",
+      "password_confirmation": "root"
+    }
+  ],
+  "roles": [
+    {
+      "id": "super_admin",
+      "name": "Super Admin",
+      "permissions": [
+        "mahasiwa.manage",
+        "user.read",
+        "user.write",
+        "dosen.manage",
+        "mk.manage"
+      ]
+    },
+    {
+      "id": "akademik_manager",
+      "name": "Akademik Manager",
+      "permissions": [
+        "mk.manage",
+        "user.read"
+      ]
+    }
+  ],
+  "permissions": [
+    {
+      "id": "user.read",
+      "name": "User Read"
+    },
+    {
+      "id": "user.write",
+      "name": "User Write"
+    },
+    {
+      "id": "dosen.manage",
+      "name": "Kelola Dosen"
+    },
+    {
+      "id": "mk.manage",
+      "name": "Kelola Mata Kuliah"
+    },
+    {
+      "id": "kelas.manage",
+      "name": "Kelola Kelas"
+    }
+  ],
+  "dosen": [
+    {
+      "id": "1",
+      "nidn": "10001",
+      "nama": "Dr. Andi",
+      "status": true
+    },
+    {
+      "id": "f869",
+      "nidn": "10002",
+      "nama": "Dr. Rahadi",
+      "status": true
+    },
+    {
+      "id": "ece5",
+      "nidn": "10003",
+      "nama": "Dr. Jatmoko",
+      "status": true
+    },
+    {
+      "id": "ef20",
+      "nidn": "10004",
+      "nama": "Dr. Supratman",
+      "status": true
+    },
+    {
+      "id": "fbdd",
+      "nidn": "10005",
+      "nama": "DR. Sinaga",
+      "status": true
+    },
+    {
+      "id": "e568",
+      "nidn": "10006",
+      "nama": "Dr. Budi",
+      "status": true
+    }
+  ],
+  "mahasiswa": [
+    {
+      "id": "2f7c",
+      "nim": "0001",
+      "nama": "Yanto",
+      "status": true
+    },
+    {
+      "id": "24d4",
+      "nim": "0002",
+      "nama": "Andi",
+      "status": true
+    },
+    {
+      "id": "00a6",
+      "nim": "0003",
+      "nama": "Kopling",
+      "status": true
+    },
+    {
+      "id": "06c2",
+      "nim": "0004",
+      "nama": "Salsa",
+      "status": true
+    },
+    {
+      "id": "0d62",
+      "nim": "0005",
+      "nama": "Dinda",
+      "status": true
+    },
+    {
+      "id": "8b72",
+      "nim": "0006",
+      "nama": "Heru",
+      "status": true
+    },
+    {
+      "id": "c069",
+      "nim": "0006",
+      "nama": "Salsa",
+      "status": true
+    }
+  ],
+  "mata_kuliah": [
+    {
+      "id": "1",
+      "kode": "IF101",
+      "nama": "Algoritma",
+      "sks": 3,
+      "status": true
+    },
+    {
+      "id": "5d3e",
+      "kode": "mk002",
+      "nama": "Kalkulus2",
+      "sks": 2,
+      "status": true
+    },
+    {
+      "id": "5",
+      "kode": "mk002",
+      "nama": "Kalkulus2",
+      "sks": 2,
+      "status": true
+    },
+    {
+      "id": "3",
+      "kode": "mk002",
+      "nama": "Kalkulus2",
+      "sks": 2,
+      "status": true
+    },
+    {
+      "id": "6",
+      "kode": "mk002",
+      "nama": "Kalkulus2",
+      "sks": 2,
+      "status": true
+    },
+    {
+      "id": "7",
+      "kode": "mk002",
+      "nama": "Kalkulus2",
+      "sks": 2,
+      "status": true
+    }
+  ],
+  "kelas": [
+    {
+      "id": "2c08",
+      "matakuliah_id": "1",
+      "dosen_id": "1",
+      "mahasiswa_ids": [
+        "2f7c",
+        "24d4",
+        "00a6"
+      ]
+    },
+    {
+      "id": "48ec",
+      "matakuliah_id": "5d3e",
+      "dosen_id": "f869",
+      "mahasiswa_ids": [
+        "06c2"
+      ]
+    },
+    {
+      "id": "ebd2",
+      "matakuliah_id": "3",
+      "dosen_id": "ece5",
+      "mahasiswa_ids": [
+        "00a6"
+      ]
+    },
+    {
+      "id": "d31b",
+      "matakuliah_id": "3",
+      "dosen_id": "ef20",
+      "mahasiswa_ids": [
+        "2f7c",
+        "00a6",
+        "0d62"
+      ]
+    },
+    {
+      "id": "bfe7",
+      "matakuliah_id": "5",
+      "dosen_id": "fbdd",
+      "mahasiswa_ids": [
+        "00a6",
+        "0d62",
+        "8b72"
+      ]
+    },
+    {
+      "id": "039c",
+      "matakuliah_id": "6",
+      "dosen_id": "fbdd",
+      "mahasiswa_ids": [
+        "0d62",
+        "00a6",
+        "06c2",
+        "24d4",
+        "c069"
+      ]
+    },
+    {
+      "id": "e90c",
+      "matakuliah_id": "6",
+      "dosen_id": "ef20",
+      "mahasiswa_ids": [
+        "24d4",
+        "8b72",
+        "00a6",
+        "c069"
+      ]
+    }
+  ]
+}

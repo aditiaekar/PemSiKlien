@@ -1,0 +1,7 @@
+{
+  "/api/dosen": "/dosen",
+  "/api/mata-kuliah": "/mata_kuliah",
+  "/api/register": "/users",
+  "/api/mahasiswa": "/mahasiswa",
+  "/api/kelas": "/kelas"
+}
