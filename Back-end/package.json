@@ -2,8 +2,9 @@
   "name": "app-mahasiswa-backend",
   "version": "1.0.0",
   "scripts": {
-    "dev": "json-server --watch db.json --port 4000 --routes routes.json",
-    "start": "json-server --watch db.json --port $PORT --routes routes.json"
+    "dev": "json-server --host 0.0.0.0 --watch db.json --port 4000 --routes routes.json",
+    "start": "json-server --host 0.0.0.0 --watch db.json --port $PORT --routes routes.json",
+    "build": "echo \"no build step for backend\""
   },
   "dependencies": {
     "json-server": "^0.17.4"
