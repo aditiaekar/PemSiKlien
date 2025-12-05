@@ -1,9 +1,12 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:4000", // sesuaikan jika port/host berbeda
+  baseURL: import.meta.env.VITE_API_URL || "http://localhost:4000",
   timeout: 15000,
-  headers: { "Content-Type": "application/json", Accept: "application/json" },
+  headers: {
+    "Content-Type": "application/json",
+    Accept: "application/json",
+  },
 });
 
 api.interceptors.request.use((config) => {
@@ -22,8 +25,8 @@ api.interceptors.response.use(
   (error) => {
     const err = new Error(
       error?.response?.data?.message ||
-      error?.message ||
-      "Terjadi kesalahan. Coba lagi."
+        error?.message ||
+        "Terjadi kesalahan. Coba lagi."
     );
     err.status = error?.response?.status;
     err.data = error?.response?.data;
